@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+
+def line_plot(x, y, xlabel='X', ylabel='Y', title='Line Plot'):
+    plt.figure(figsize=(8,6))
+    plt.plot(x, y, marker='o')
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.title(title)
+    plt.grid(True)
+    plt.show()
+
+# Example usage:
+# line_plot(df['time'], df['value'], xlabel='Time', ylabel='Value', title='Value over Time')
